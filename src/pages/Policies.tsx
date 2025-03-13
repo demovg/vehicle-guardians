@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -104,7 +103,7 @@ const policyTypes = [
       </svg>
     ),
     title: 'Uninsured Motorist',
-    description: 'Protects you if you're in an accident with a driver who doesn't have insurance or enough coverage.'
+    description: 'Protects you if you\'re in an accident with a driver who doesn\'t have insurance or enough coverage.'
   },
   {
     icon: (

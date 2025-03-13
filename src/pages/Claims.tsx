@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -26,7 +25,7 @@ const steps = [
   {
     number: '04',
     title: 'Resolution',
-    description: 'Once repairs are complete or settlement is issued, we'll close your claim and follow up to ensure satisfaction.',
+    description: 'Once repairs are complete or settlement is issued, we\'ll close your claim and follow up to ensure satisfaction.',
     image: 'https://images.unsplash.com/photo-1581626221695-03f10d9f3ae4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80'
   }
 ];
@@ -34,11 +33,11 @@ const steps = [
 const faqs = [
   {
     question: 'How quickly can I expect my claim to be processed?',
-    answer: 'Most claims are processed within 24-48 hours of being submitted. Complex cases may take longer, but you'll be assigned a dedicated claims representative who will keep you updated throughout the process.'
+    answer: 'Most claims are processed within 24-48 hours of being submitted. Complex cases may take longer, but you\'ll be assigned a dedicated claims representative who will keep you updated throughout the process.'
   },
   {
     question: 'What information do I need to provide when filing a claim?',
-    answer: 'You'll need your policy number, details about the incident (date, time, location), information about any other parties involved, photos of the damage if available, and a police report number if applicable.'
+    answer: 'You\'ll need your policy number, details about the incident (date, time, location), information about any other parties involved, photos of the damage if available, and a police report number if applicable.'
   },
   {
     question: 'Can I choose my own repair shop?',
@@ -50,7 +49,7 @@ const faqs = [
   },
   {
     question: 'What if my vehicle is totaled?',
-    answer: 'If the cost of repairs exceeds the actual cash value of your vehicle, we may declare it a total loss. In this case, we'll offer a settlement based on the pre-accident market value of your vehicle, minus any applicable deductible.'
+    answer: 'If the cost of repairs exceeds the actual cash value of your vehicle, we may declare it a total loss. In this case, we\'ll offer a settlement based on the pre-accident market value of your vehicle, minus any applicable deductible.'
   }
 ];
 
