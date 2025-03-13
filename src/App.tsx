@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Index from './pages/Index';
 import Claims from './pages/Claims';
 import Policies from './pages/Policies';
+import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 import './App.css';
 
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Index />} />
         <Route path="/claims" element={<Claims />} />
         <Route path="/policies" element={<Policies />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
