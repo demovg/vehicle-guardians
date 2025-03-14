@@ -17,7 +17,7 @@ const Admin = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow bg-gray-50">
+      <main className="flex-grow bg-gray-50 pt-24 pb-12"> {/* Added pt-24 for padding-top */}
         <div className="page-container py-12">
           <div className="flex justify-between items-center mb-8">
             <h1 className="text-3xl font-bold text-gray-800">Admin Dashboard</h1>
