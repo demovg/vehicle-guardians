@@ -23,13 +23,13 @@ const Header = () => {
   return (
     <header 
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 py-4 transition-all duration-300 ease-in-out',
+        'fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out w-full',
         isScrolled 
           ? 'glass py-3 shadow-sm' 
           : 'bg-transparent py-4'
       )}
     >
-      <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
+      <div className="container max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
         {/* Logo */}
         <Link 
           to="/" 
@@ -127,7 +127,7 @@ const Header = () => {
         "md:hidden absolute top-full left-0 right-0 glass transition-all overflow-hidden",
         isMobileMenuOpen ? "max-h-96 py-4 border-b border-slate-200" : "max-h-0"
       )}>
-        <div className="container mx-auto px-6">
+        <div className="container max-w-[1400px] mx-auto px-4 sm:px-6">
           <nav className="flex flex-col space-y-3 mb-6">
             <NavLink 
               to="/" 

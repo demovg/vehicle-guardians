@@ -13,16 +13,18 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/claims" element={<Claims />} />
-        <Route path="/policies" element={<Policies />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <div className="min-h-screen w-full">
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/claims" element={<Claims />} />
+          <Route path="/policies" element={<Policies />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </div>
     </Router>
   );
 }

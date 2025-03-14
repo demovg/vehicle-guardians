@@ -113,4 +113,13 @@
   .button-hover-effect:hover::after {
     @apply scale-x-100;
   }
+  
+  /* Page container styles */
+  .page-container {
+    @apply max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 w-full;
+  }
+  
+  .section-container {
+    @apply max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8;
+  }
 }
