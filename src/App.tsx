@@ -17,10 +17,10 @@ import './App.css';
 
 function App() {
   return (
-    <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange={false}>
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <AdminProvider>
         <Router>
-          <div className="min-h-screen w-full">
+          <div className="min-h-screen w-full bg-background text-foreground">
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/claims" element={<Claims />} />
