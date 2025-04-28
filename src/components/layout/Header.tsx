@@ -1,7 +1,7 @@
-
 import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { cn } from '@/lib/utils';
+import { ThemeToggle } from '../theme/ThemeToggle';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,7 +25,7 @@ const Header = () => {
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out w-full',
         isScrolled 
-          ? 'glass py-3 shadow-sm' 
+          ? 'glass py-3 shadow-sm dark:bg-black/50' 
           : 'bg-transparent py-4'
       )}
     >
@@ -82,11 +82,12 @@ const Header = () => {
           </NavLink>
         </nav>
 
-        {/* Auth Buttons */}
+        {/* Auth Buttons & Theme Toggle */}
         <div className="hidden md:flex items-center space-x-4">
+          <ThemeToggle />
           <Link 
             to="/signup" 
-            className="px-4 py-2 text-slate-700 font-medium rounded-md transition-colors hover:text-primary"
+            className="px-4 py-2 text-slate-700 dark:text-slate-300 font-medium rounded-md transition-colors hover:text-primary"
           >
             Sign Up
           </Link>
